@@ -11,15 +11,15 @@ function App() {
         title:{text:'各大宠物项目收入',},
         tooltip:{},
         legend:{data:['销量'],},
-        series:[{name:'销量',type:'pie',
-          data:[
-            {value:335,name:'撸猫'},
-            {value:522,name:'运费'},
-            {value:755,name:'卖宠物钱'},
-            {value:900,name:'猫粮'},
-            {value:600,name:'洗澡费'},
-            {value:664,name:'配种费'}
-          ]
+        xAxis:{
+          type:'category',
+          data:['撸猫','运费','卖宠物钱','猫粮','洗澡费','配种费']
+        },
+        yAxis:{
+          type:'value'
+        },
+        series:[{name:'销量',type:'line',
+          data:[335,522,755,900,600,664]
         },
         ]
       }
